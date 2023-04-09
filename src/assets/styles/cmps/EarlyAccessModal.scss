@@ -1,0 +1,46 @@
+.early-access-modal {
+  align-self: center;
+  justify-self: center;
+  background-color: $primary-clr3;
+  width: 80%;
+  padding-block-start: em(50px);
+  padding-block-end: em(30px);
+  padding-inline: em(50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateY(70%);
+  text-align: center;
+  h3 {
+    font-size: em(28px);
+  }
+  p {
+    color: $secondary-clr1;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    gap: em(20px);
+    input {
+      width: 60%;
+      border-radius: 3em;
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding-block-start: em(20px);
+
+    margin-block-end: em(30px);
+    margin-inline: 2.5%;
+    width: 95%;
+
+    form {
+      flex-direction: column;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

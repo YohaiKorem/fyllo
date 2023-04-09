@@ -1,0 +1,57 @@
+header.app-header {
+  margin-block-start: em(28px);
+  background-color: $primary-clr1;
+  padding: 6px 12px;
+  height: rem(44px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 20px;
+  & * {
+    font-family: 'raleway regular';
+  }
+
+  .logo {
+    object-fit: contain;
+    width: em(270px);
+    span {
+      display: inline-block;
+    }
+  }
+
+  nav {
+    align-items: stretch;
+    display: flex;
+    align-items: center;
+
+    a {
+      height: 32px;
+      border-radius: 3px;
+      color: $secondary-clr1;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $btn-hover-clr2;
+      }
+
+      & {
+        font-size: rem(14px);
+        border-top: 1px solid $primary-clr1;
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    position: fixed;
+    top: -4%;
+    padding-block: em(20px);
+    min-height: em(70px);
+    justify-content: center;
+    align-items: start;
+    z-index: 100;
+    .logo {
+      width: em(200px);
+    }
+  }
+}

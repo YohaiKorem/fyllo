@@ -1,0 +1,50 @@
+.fyllo-preview {
+  display: flex;
+  .txt-container {
+    align-self: center;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 10px;
+    h3 {
+      font-weight: 700;
+      font-size: rem(35px);
+      line-height: rem(40px);
+    }
+    p {
+      color: $secondary-clr1;
+      font-weight: 700;
+    }
+    a {
+      color: $primary-clr2;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 40%;
+        background-color: $primary-clr2;
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        height: em(10px);
+        width: em(10px);
+        border-radius: 3em;
+
+        bottom: 25%;
+        background-color: $primary-clr2;
+        right: 63%;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    flex-direction: column;
+    .txt-container {
+      h3 {
+        font-size: em(25px);
+      }
+    }
+  }
+}

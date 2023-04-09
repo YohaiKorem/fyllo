@@ -1,0 +1,26 @@
+.features-list {
+  margin-block-start: em(100px);
+  align-self: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: em(30px);
+  margin-block-end: em(20px);
+  .feature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: 40%;
+    p {
+      color: $secondary-clr1;
+      font-weight: 700;
+    }
+  }
+  @media (max-width: 700px) {
+    .feature-container {
+      flex-basis: 100%;
+    }
+  }
+}

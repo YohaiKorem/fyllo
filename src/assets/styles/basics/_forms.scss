@@ -1,0 +1,13 @@
+button {
+  border: 0;
+  background-color: $primary-clr1;
+  color: whitesmoke;
+
+  cursor: pointer;
+}
+
+form > * {
+  display: block;
+  width: 200px;
+  margin: 10px 0px;
+}

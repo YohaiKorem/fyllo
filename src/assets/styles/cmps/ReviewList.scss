@@ -1,0 +1,42 @@
+.review-list-container {
+  .review-list {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: em(25px);
+    .review-container {
+      border-radius: 3px;
+      background-color: #21293c;
+      padding: 6px 12px;
+      P {
+        font-size: 14px;
+        color: $secondary-clr1;
+        font-weight: 700;
+      }
+      .profile-preview {
+        font-size: 14px;
+        display: flex;
+        gap: em(15px);
+
+        .profile-details {
+          display: flex;
+          flex-direction: column;
+        }
+        .profile-img {
+          max-width: em(50px);
+          border-radius: 3em;
+        }
+      }
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+  .bg-quotes {
+    position: relative;
+    top: em(15px);
+    right: em(5px);
+    max-width: em(50px);
+    z-index: 0;
+  }
+}

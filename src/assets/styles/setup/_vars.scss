@@ -1,0 +1,136 @@
+// COLOR PALETTE
+$primary-clr1: #181e2a;
+$primary-clr2: #69dfd7;
+$primary-clr3: #1c2230;
+$primary-clr4: #0079bf;
+$primary-clr5: #42526e;
+$primary-clr6: #5ba4cf;
+$secondary-clr1: #6c727e;
+$secondary-clr2: hsl(0, 0%, 100%);
+$secondary-clr3: #f4f5f7;
+$secondary-clr4: #e2e4e9;
+$secondary-clr5: #eaecf0;
+$secondary-clr6: #f5f6f8;
+$secondary-clr7: #deebff;
+$secondary-clr8: #f9fafc;
+
+// BUTTONS
+$btn-clr1: #172b4d;
+$btn-clr2: #0079bf;
+$btn-clr3: #0000001a;
+$btn-clr4: #b04632;
+$btn-clr5: rgba(0, 0, 0, 0.3);
+$btn-clr6: #091e4214;
+$btn-clr7: #026aa7;
+$btn-clr8: #091e420a;
+$btn-clr9: #5aac44;
+$btn-clr10: #0065ff;
+$btn-hover-clr1: rgba(0, 0, 0, 0.1);
+$btn-hover-clr2: rgba(0, 0, 0, 0.2);
+$btn-hover-clr3: rgba(255, 255, 255, 0.2);
+$btn-hover-clr4: rgba(255, 255, 255, 0.3);
+$btn-hover-clr5: #0747a6;
+
+// FONT COLORS
+$font-clr0: #101010;
+$font-clr1: #172b4d;
+$font-clr2: #2d3f5e;
+$font-clr3: #5e6c84;
+$font-clr4: #fff;
+$font-clr5: #6b778c;
+$font-clr6: #344563;
+
+// LABEL DEFAULT COLORS
+$label-clr1: #d6ecd2;
+$label-clr2: #faf3c0;
+$label-clr3: #fce6c6;
+$label-clr4: #f5d3ce;
+$label-clr5: #eddbf4;
+$label-clr6: #bcd9ea;
+$label-clr7: #bdecf3;
+$label-clr8: #dfe1e6;
+
+// COVER COLORS
+$cover-clr1: linear-gradient(
+  55.41deg,
+  rgb(12, 102, 228) 2%,
+  rgb(55, 180, 195) 100%
+);
+$cover-clr2: linear-gradient(
+  55.41deg,
+  rgb(12, 102, 228) 2%,
+  rgb(9, 50, 108) 100%
+);
+$cover-clr3: linear-gradient(
+  55.41deg,
+  rgb(9, 50, 108) 2%,
+  rgb(205, 81, 157) 100%
+);
+$cover-clr4: linear-gradient(
+  55.41deg,
+  rgb(110, 93, 198) 2%,
+  rgb(231, 116, 187) 100%
+);
+$cover-clr5: linear-gradient(
+  55.41deg,
+  rgb(227, 73, 53) 2%,
+  rgb(250, 165, 61) 100%
+);
+$cover-clr6: linear-gradient(
+  55.41deg,
+  rgb(250, 165, 61) 2%,
+  rgb(89, 201, 2) 100%
+);
+$cover-clr7: #29cce5;
+$cover-clr8: #6deca9;
+$cover-clr9: #ff8ed4;
+$cover-clr10: #172b4d;
+
+// LABEL MENU COLORPICKER COLORS
+
+$label-clr1: #b7ddb0;
+$label-clr2: #f5ea92;
+$label-clr3: #fad29c;
+$label-clr4: #efb3ab;
+$label-clr5: #dfc0eb;
+$label-clr6: #7bc86c;
+$label-clr7: #f5dd29;
+$label-clr8: #ffaf3f;
+$label-clr9: #ef7564;
+$label-clr10: #cd8de5;
+$label-clr11: #5aac44;
+$label-clr12: #e6c60d;
+$label-clr13: #e79217;
+$label-clr14: #cf513d;
+$label-clr15: #a86cc1;
+$label-clr16: #8bbdd9;
+$label-clr17: #8fdfeb;
+$label-clr18: #b3f1d0;
+$label-clr19: #f9c2e4;
+$label-clr20: #505f79;
+$label-clr21: #5ba4cf;
+$label-clr22: #29cce5;
+$label-clr23: #6deca9;
+$label-clr24: #ff8ed4;
+$label-clr25: #344563;
+$label-clr26: #026aa7;
+$label-clr27: #00aecc;
+$label-clr28: #4ed583;
+$label-clr29: #e568af;
+$label-clr30: #091e42;
+
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 720px;
+$normal-breakpoint: 960px;
+$wide-breakpoint: 1200px;
+
+// OTHERS
+$header-height: 44px;
+$shadow-clr1: #091e4240;
+$action-modal-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.251),
+  0 0 0 1px rgba(9, 30, 66, 0.078);
+$input-shadow: inset 0 0 0 2px #dfe1e6;
+$board-display-shadow: 0 8px 16px -50px rgba(9, 30, 66, 0.251),
+  0 0 0 1px rgba(9, 30, 66, 0.078);
+$star-yellow: #f2d600;
