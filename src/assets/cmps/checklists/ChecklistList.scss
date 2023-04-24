@@ -1,0 +1,138 @@
+.checklist-list {
+
+  .checklist-btn {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.checklist.li button {
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.checklist-preview {
+  position: relative;
+  padding: 4px 0;
+  margin: 0 0 4px 0px;
+
+  .icon {
+    margin-top: -8px;
+  }
+}
+
+.todos-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+
+  button {
+    width: fit-content;
+  }
+
+  button.btn-delete-todo {
+    .icon {
+      position: static;
+      margin-block: 8px;
+    }
+  }
+
+  .todos-preview {
+    display: flex;
+    align-items: center;
+
+    button {
+      &:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  input {
+    border: none;
+    background-color: $secondary-clr3;
+  }
+
+  .add-todo-input {
+    box-shadow: $input-shadow;
+    background-color: white;
+
+    &:focus {
+      background-color: $secondary-clr1;
+      box-shadow: inset 0 0 0 2px $primary-clr4;
+      border: none;
+      outline: none;
+    }
+
+    margin-top: 5px;
+  }
+
+  .add-item-btn {
+    margin: 5px 0px;
+  }
+}
+
+.add-todo-btns {
+  margin-top: 7px;
+  display: flex;
+  gap: 5px;
+}
+
+.cancel-todo-btn {
+  background-color: $secondary-clr3;
+}
+
+.checklist-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  button {
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  .progress-container {
+    width: 100%;
+    margin: 12px 0 6px 0;
+
+
+    span {
+      color: $font-clr3;
+      font-size: 11px;
+      left: -40px;
+      line-height: 10px;
+      position: absolute;
+      text-align: center;
+      width: 32px;
+    }
+
+    .progress2 {
+      flex-grow: 1;
+      overflow: hidden;
+      border-radius: 4px;
+      background: $btn-clr6;
+    }
+
+    .progress-bar {
+      height: 8px;
+      transition: .2s ease-in;
+    }
+
+    .progress-moved .progress-bar {
+      overflow: hidden;
+      // background-color: $primary-clr6;
+    }
+  }
+
+  .mark-todo {
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,78 @@
+.task-attachments {
+  align-items: center;
+  justify-content: space-between;
+
+  .icon {
+    color: $font-clr3;
+    font-size: rem(16px);
+    align-self: center;
+
+    &.description-icon {
+      margin: 0 4px 4px 0;
+    }
+  }
+
+  .btn-date {
+    z-index: 1;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: $secondary-clr4;
+
+    }
+  }
+
+  p:is(.checklist, .files, .date) {
+    color: $font-clr3;
+    align-items: center;
+    max-width: 100%;
+    min-height: 20px;
+    overflow: hidden;
+    padding: 0 4px 0 2px;
+    margin: 0 4px 4px 0;
+    position: relative;
+    text-overflow: ellipsis;
+
+    &.complete {
+      background-color: #61bd4f;
+      border-radius: 3px;
+      color: #fff;
+
+      .icon {
+        color: #fff;
+      }
+    }
+  }
+
+  .member-preview {
+    padding: 2px;
+
+    .member-img {
+      height: 28px;
+      width: 28px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.files-display {
+  margin: 0;
+  padding: 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li img {
+      height: 260px;
+      background-size: contain;
+    }
+  }
+}

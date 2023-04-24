@@ -1,0 +1,167 @@
+.date-picker-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .vc-container {
+    border: none;
+  }
+
+  .vc-header {
+    width: 100%;
+
+    &>* {
+      background-color: inherit;
+      color: #a5adba;
+    }
+
+    .vc-title {
+      color: #172b4d;
+      font-weight: 600;
+    }
+  }
+
+  .vc-weekday {
+    text-transform: uppercase;
+  }
+
+  .vc-highlight-content-outline {
+    background-color: rgb(66 82 110);
+    color: #fff;
+  }
+
+  .highlights {
+    background-color: rgb(66 82 110);
+  }
+
+  .vc-day-content {
+    border-radius: 3px;
+    padding: 4px 9px;
+    font-size: em(14px);
+    border-width: 2px;
+  }
+
+  .vc-outline-content-light {
+    background-color: #deebff;
+  }
+
+  .vc-highlight-content-solid {
+    background-color: rgb(66 82 110);
+  }
+
+  .vc-day {
+    border-radius: rem(3px);
+  }
+
+  .date-input-container {}
+
+  input[type='text'] {
+    margin-right: 8px;
+
+    background-color: $secondary-clr1;
+    box-shadow: inset 0 0 0 2px $primary-clr4;
+    outline: none;
+  }
+
+  .custom-date-picker-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: rem(16px);
+
+    .inputs-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .txt-inputs-container.disabled {
+        cursor: not-allowed;
+      }
+
+      input[type='text'] {
+        margin-right: 8px;
+
+        background-color: $secondary-clr1;
+        box-shadow: inset 0 0 0 2px $primary-clr4;
+
+        outline: none;
+
+        &.disabled {
+          border: none;
+          background-color: #ebecf0;
+          box-shadow: none;
+          color: #a5adba;
+          pointer-events: none;
+        }
+      }
+
+      label {
+        display: inline-block;
+        width: 100%;
+        margin-top: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // max-width: 100%;
+        font-weight: 700;
+        font-size: rem(12px);
+        color: $font-clr3;
+      }
+    }
+
+    input[type='checkbox'] {
+      margin-top: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100%;
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      margin-inline-end: 8px;
+    }
+
+    .start-date-container {
+      max-width: 100%;
+      margin-bottom: rem(12px);
+    }
+
+    .txt-input {
+      width: rem(90px);
+      margin: 0;
+      padding: 6px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      transition-property: background-color, border-color, box-shadow;
+      transition-duration: 85ms;
+      transition-timing-function: ease;
+      border-radius: 3px;
+    }
+  }
+
+  .btns-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(8px);
+    justify-content: space-between;
+    width: 100%;
+
+    &>* {
+      margin-inline: rem(8px);
+    }
+
+    .btn-blue {
+      margin-bottom: rem(8px);
+    }
+  }
+}
+
+:root {
+  --vc-accent-600: red !important;
+}

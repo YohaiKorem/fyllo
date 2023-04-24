@@ -1,0 +1,105 @@
+.cover-color-item-1 {
+  background-color: #7bc86c;
+  &:hover {
+    background-color: darken(#7bc86c, 10);
+  }
+}
+.cover-color-item-2 {
+  background-color: #f5dd29;
+  &:hover {
+    background-color: darken(#f5dd29, 10);
+  }
+}
+.cover-color-item-3 {
+  background-color: #ffaf3f;
+  &:hover {
+    background-color: darken(#ffaf3f, 10);
+  }
+}
+.cover-color-item-4 {
+  background-color: #ef7564;
+  &:hover {
+    background-color: darken(#ef7564, 10);
+  }
+}
+.cover-color-item-5 {
+  background-color: #cd8de5;
+  &:hover {
+    background-color: darken(#cd8de5, 10);
+  }
+}
+.cover-color-item-6 {
+  background-color: #8bbdd9;
+  &:hover {
+    background-color: darken(#8bbdd9, 10);
+  }
+}
+.cover-color-item-7 {
+  background-color: #8fdfeb;
+  &:hover {
+    background-color: darken(#8fdfeb, 10);
+  }
+}
+.cover-color-item-8 {
+  background-color: #b3f1d0;
+  &:hover {
+    background-color: darken(#b3f1d0, 10);
+  }
+}
+.cover-color-item-9 {
+  background-color: #f9c2e4;
+  &:hover {
+    background-color: darken(#f9c2e4, 10);
+  }
+}
+.cover-color-item-10 {
+  background-color: #505f79;
+  &:hover {
+    background-color: darken(#505f79, 10);
+  }
+}
+
+.covers-container {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  .cover-display {
+    background-color: #c6c6c6;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    width: 134.5px;
+    height: 58px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(9, 30, 66, 0.08);
+  }
+  .cover-display.picked {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0079bf;
+  }
+  .selected {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.remove-cover-btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cover-h5 {
+  color: #5e6c84;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.semi-cover-display {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  padding: 14.5px;
+}

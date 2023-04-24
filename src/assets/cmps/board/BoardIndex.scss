@@ -1,0 +1,23 @@
+.index-container {
+  margin: auto;
+}
+
+.add-form-header {
+  h5 {
+    font-weight: 100;
+    margin: auto;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid $secondary-clr4;
+
+  p {
+    color: $font-clr3;
+    margin: 0;
+    float: right;
+  }
+}

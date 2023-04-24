@@ -1,0 +1,247 @@
+.board-container {
+  padding-bottom: 5px;
+
+  header.board-header {
+    height: auto;
+    padding: 8px 4px 8px 12px;
+    position: relative;
+    flex-wrap: wrap;
+
+    h1.board-title {
+      font-family: "Segoe UI Bold";
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      color: $font-clr1;
+      margin: 0;
+      padding: 6px 12px;
+      margin-inline-end: 4px;
+      border-radius: 3px;
+
+      &:focus {
+        background-color: $secondary-clr1;
+        box-shadow: inset 0 0 0 2px $primary-clr4;
+        border: none;
+        outline: none;
+      }
+    }
+
+    button {
+      min-width: 36px;
+      min-height: 36px;
+    }
+
+    .btn-star {
+      line-height: 20px;
+      padding: rem(6px);
+
+      span {
+        width: 20px;
+      }
+
+      &:hover {
+        color: $star-yellow;
+      }
+
+      .solid-star {
+        color: $star-yellow;
+      }
+    }
+
+    i.icon {
+      margin-right: 8px;
+    }
+
+    .btn-filter {
+      fill: $font-clr1;
+      line-height: 20px;
+      gap: 8px;
+
+      &:hover {
+        background-color: $btn-hover-clr2;
+      }
+    }
+
+    .btn-menu {
+      margin: 0 4px 0 0;
+      background-color: $btn-clr3;
+      fill: $font-clr1;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .board-header-btn-divider {
+      border-left: 1px solid #ffffff29;
+      float: left;
+      height: 16px;
+      margin: 8px 8px 12px 8px;
+    }
+
+    &.dark {
+      h1.board-title {
+        color: $font-clr4;
+
+        &:focus {
+          background-color: $btn-clr3;
+        }
+      }
+
+      button:is(.btn-filter, .btn-star, .btn-menu, .btn-share) {
+        color: $font-clr4;
+        fill: $font-clr4;
+        background-color: $btn-hover-clr3;
+
+        &:hover {
+          background-color: $btn-hover-clr4;
+        }
+      }
+    }
+  }
+
+  main.groups-wrapper {
+    height: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+    margin-left: 7px;
+
+    .new-group-container {
+      margin: 0 4px;
+      min-width: 272px;
+      border-radius: 3px;
+      height: max-content;
+      transition: background 85ms ease-in, opacity 40ms ease-in,
+        border-color 85ms ease-in;
+
+      &>button {
+        width: 100%;
+        padding: 12px;
+        margin: 0 4px 0 0;
+        justify-content: start;
+
+        &.dark {
+          color: $font-clr4;
+          fill: $font-clr4;
+          background-color: $btn-hover-clr3;
+
+          &:hover {
+            background-color: $btn-hover-clr4;
+          }
+        }
+      }
+
+      .new-group-wrapper {
+        background-color: $secondary-clr5;
+        flex-wrap: wrap;
+        border-radius: 3px;
+        padding: 4px;
+
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          border-radius: 3px;
+          margin-bottom: 8px;
+
+          &:focus {
+            box-shadow: inset 0 0 0 2px $primary-clr4;
+          }
+        }
+      }
+    }
+
+    .icon-add {
+      font-size: 1rem;
+      margin-inline-end: 4px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  margin: 20px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #c8c3cd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dddae0;
+  border-radius: 5px;
+}
+
+.board-side-menu {
+  position: fixed;
+  top: rem(44px);
+  right: 0;
+  width: 20em;
+  height: 100%;
+  background-color: $secondary-clr2;
+}
+
+.board-right-actions {
+  transition: margin 0.6s;
+  margin-inline-end: 0px;
+}
+
+.move-right-actions {
+  margin-inline-end: 100px;
+}
+
+.right-menu {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(10em);
+  z-index: 8;
+  top: rem(44px);
+  position: fixed;
+  right: 0;
+  height: 100%;
+  width: 20rem;
+  background-color: $secondary-clr3;
+}
+
+.open {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0em);
+}
+
+.right-menu-open {
+  margin-right: 24em;
+  transition: margin 0.3s ease-in-out;
+}
+
+.right-menu-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: $font-clr2;
+}
+
+#right-menu-h5 {
+  font-size: 1rem;
+  color: $font-clr2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.right-menu-header {
+  padding: 12px 5px;
+
+  span {
+    padding-right: 5px;
+    font-size: 19px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  width: 95%;
+  margin: auto;
+  margin-bottom: 15px;
+}
